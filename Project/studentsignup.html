@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                background-position: center;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+    
+            a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #007BFF;
+                border-radius: 5px;
+            }
+    
+            a:hover {
+                background-color: #0056b3;
+            }
+    
+            .login-link {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #007BFF;
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+
+            .form {
+                text-align: center;
+                justify-content: center;
+                display: flex;
+            }
+        </style>
+    </head>
+<body>
+    <script src="scriptme.js"></script>
+    <div class="form">
+    <form name="studentsignupform" action="studentsignup.php" onsubmit="return validateForm()">
+        <title> Student signup Form </title>
+        <h2 style="text-align: center;"> Student signup Form </h2>
+        <h3 style="text-align: center;"> Please enter below information to signup:</h3><br>
+        First Name:
+        <input type="text" id="firstname" name="firstname" required>
+        <br><br>
+        <b>Last Name:</b>
+        <input type="text" id="lastname" name="lastname" required>
+        <br><br>
+        <b>Date of Birth:</b>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        <b>Gender:</b>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+        <b>UserName:</b>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <b>Password:</b>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <b>Phone Number:</b>
+        <input type="text" id="phonenumber" name="phonenumber" required>
+        <br><br>
+        <b>Email ID:</b>
+        <input type="text" id="emailid" name="emailid" required>
+        <br><br>
+        <b>Address:</b>
+        <input type="text" id="address" name="address" required>
+        <br><br>
+        <b>Program:</b>
+        <input type="text" id="program" name="program" required>
+        <br><br>
+        <b>Enrollment Date:</b>
+        <input type="date" id="enrollmentdate" name="enrollmentdate" required>
+        <br><br>
+        <b>Expected Graduation Date:</b>
+        <input type="date" id="expectedgraduationdate" name="expectedgraduationdate" required>
+        <br><br>
+        <b>GPA:</b>
+        <input type="text" id="gpa" name="gpa" required>
+        <br><br>
+        <b>Status:</b>
+        <select id="status" name="status">
+            <option value="Active">Active</option>
+            <option value="On leave">On leave</option>
+        </select>
+        <br><br>
+        <input type="submit" name="submit" value="Sign up">
+    </form>
+</div>
+</body>
+<a href="login.html" class="login-link">Login</a>
+</html>

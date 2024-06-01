@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-image: url('login.jpg');
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        .alumnisignup-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .studentsignup-link {
+            position: absolute;
+            top: 10px;
+            right: 160px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .here {
+            position: absolute;
+            top: 45%;
+            left: 62%;
+            transform: translate(-50%, -50%);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login.php" method="post" style="text-align: center;, justify-content: center;, display: flex;">
+        <br><br><br><br>
+        <h1> Welcome to Student/Alumni portal</h1>
+        <h2><br>Please enter UserName and Password to login:</h2> <br>
+        UserName:
+        <input type="text" name="username" required>
+        <br><br>
+        Password:
+        <input type="password" name="password" required>
+        <br><br>
+        User Type:
+        <select name="usertype">
+            <option value="student">Student</option>
+            <option value="alumni">Alumni</option>
+        </select>
+        <br><br>
+        <input type="submit" name="submit" value="Login">
+        <br><br>Don't have an account? Please click on sign up to create an account.<br>
+    </form>
+    <a href="studentsignup.html" class="studentsignup-link">Student Sign Up</a>
+    <a href="alumnisignup.html" class="alumnisignup-link">Alumni Sign Up</a>
+</body>
+
+</html>
