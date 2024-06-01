@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+    
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+    
+            a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #007BFF;
+                border-radius: 5px;
+            }
+    
+            a:hover {
+                background-color: #0056b3;
+            }
+
+            main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    
+            .login-link {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                text-decoration: none;
+                color: #fff;
+                background-color: #0d0d0d;
+                padding: 10px 15px;
+                border-radius: 5px;
+            }
+
+            .form {
+                text-align: center;
+                justify-content: center;
+                display: flex;
+            }
+        
+        </style>
+    </head>
+<body>
+    <script src="alumniscriptme.js"></script>
+    <main>
+        <section>
+    <div class="form">
+    <form name="alumnisignupform" action="alumnisignup.php" onsubmit="return alumnivalidateForm()">
+        <title> Alumni Signup Form </title>
+        <h2> Alumni signup Form </h1>
+        <p> Please enter below information to signup:</p>
+        First Name:
+        <input type="text" id="firstname" name="firstname" required>
+        <br><br>
+        Last Name:
+        <input type="text" id="lastname" name="lastname" required>
+        <br><br>
+        Date of Birth:
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+        Gender:
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br><br>
+        UserName:
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        Password:
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        Phone Number:
+        <input type="text" id="phonenumber" name="phonenumber" required>
+        <br><br>
+        Email ID:
+        <input type="text" id="emailid" name="emailid" required>
+        <br><br>
+        Address:
+        <input type="text" id="address" name="address" required>
+        <br><br>
+        Degree Earned:
+        <input type="text" id="degreeearned" name="degreeearned" required>
+        <br><br>
+        Graduation Date:
+        <input type="date" id="graduationdate" name="graduationdate" required>
+        <br><br>
+        Employment Status:
+        <input type="text" id="employmentstatus" name="employmentstatus" required>
+        <br><br>
+        Employer:
+        <input type="text" id="employer" name="employer" required>
+        <br><br>
+        Industry:
+        <input type="text" id="industry" name="industry" required>
+        <br><br>
+        Job Title:
+        <input type="text" id="jobtitle" name="jobtitle" required>
+        <br><br>
+        Linkedin Profile Link:
+        <input type="text" id="linkedinprofile" name="linkedinprofile" required>
+        <br><br>
+        Mentorship Availability:
+        <select id="mentorshipavailability" name="mentorshipavailability">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <br><br>
+        Preferred Mentorship Area:
+        <input type="text" id="prefrdmentorshiparea" name="prefrdmentorshiparea" required>
+        <br><br>
+        Preferred Conatact Method:
+        <select id="prefrdcontactmethod" name="prefrdcontactmethod">
+            <option value="Email">Email</option>
+            <option value="Phone">Phone</option>
+        </select>
+        <br><br>
+        Security question1:
+        <Select id="securityquestion1" name="securityquestion1">
+            <option value="You first pet name">You first pet name</option>
+            <option value="Your favourite teacher">Your favourite teacher</option>
+        </select>
+        <br><br>
+        Answer1:
+        <input type="password" id="answer1" name="answer1" required>
+        <br><br>
+        Security question2:
+        <select id="securityquestion2" name="securityquestion2">
+            <option value="You first pet name">You first pet name</option>
+            <option value="Your favourite teacher">Your favourite teacher</option>
+        </select>
+        <br><br>
+        Answer2:
+        <input type="password" id="answer2" name="answer2" required>
+        <br><br>
+        <input type="submit" name="submit" value="Sign up">
+    </form>
+</div>
+</section>
+</main>
+    <a href="login.html" class="login-link">Login</a>
+</body>
+
+</html>
